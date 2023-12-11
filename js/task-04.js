@@ -4,7 +4,7 @@ const btnEl = document.querySelector("button");
 loginFormEl.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const emailValue = loginFormEl.email.value.trim();
+  const emailValue = event.target.email.value.trim();
   const passwordlValue = loginFormEl.password.value.trim();
 
   if (!emailValue || !passwordlValue) {
@@ -24,6 +24,4 @@ btnEl.style.borderRadius = "8px";
 btnEl.style.width = "86px";
 btnEl.style.height = "40px";
 btnEl.style.border = "none";
-loginFormEl.style.borderRadius = "8px";
-loginFormEl.style.width = "360px";
-loginFormEl.style.height = "40px";
+btnEl.style.marginTop = "16px";

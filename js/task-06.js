@@ -34,6 +34,10 @@ function destroyBoxes() {
   boxesEl.innerHTML = "";
 }
 
+boxes.style.display = "flex";
+boxes.style.gap = "16px";
+boxes.style.marginTop = "32px";
+boxes.style.flexWrap = "wrap";
 createBtnEl.style.backgroundColor = "#4E75FF";
 createBtnEl.style.width = "120px";
 createBtnEl.style.height = "40px";
